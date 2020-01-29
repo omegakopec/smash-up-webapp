@@ -1,8 +1,9 @@
 import React from 'react';
+import logo from '../../images/logo/smashup-logo.png';
 
 const Header = () => {
     return(
-        <p>This is the header</p>
+            <img src={logo} alt="" />
     )
 }
 
