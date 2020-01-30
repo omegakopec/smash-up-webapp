@@ -3,7 +3,9 @@ import logo from '../../images/logo/smashup-logo.png';
 
 const Header = () => {
     return(
+        <div>
             <img src={logo} alt="" />
+        </div>
     )
 }
 
