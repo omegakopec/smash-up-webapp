@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import './sidebar.css';
 
 export default class Sidebar extends Component{
-
     render(){
         return (
             <div class="checkbox-container">
                 <h2 id="checkbox-header">Select Your Expansions</h2>
                     <ul class="cb-tags">
-                        <li> <input type="checkbox" id="baseSet" /> <label for="baseSet"> Base Set </label> </li>
+                        <li> <input type="checkbox" id="baseSet"/> <label for="baseSet"> Base Set </label> </li>
                         <li> <input type="checkbox" id="al9000Set" /> <label for="al9000Set"> Awesome Level 9000 </label> </li>
                         <li> <input type="checkbox" id="cthuluSet" /> <label for="cthuluSet"> The Obligatory Cthulhu Set </label> </li>
                         <li> <input type="checkbox" id="scienceSet" /> <label for="scienceSet"> Science Fiction Double Feature </label> </li>
@@ -28,12 +27,12 @@ export default class Sidebar extends Component{
                         <li> <input type="checkbox" id="cultureSet" /> <label for="cultureSet"> Culture Shock </label> </li>
                         <li> <input type="checkbox" id="selectAll" /> <label for="selectAll"> All </label> </li>
                         
-                        <hr></hr>
+                        <br/>
                         
-                        <li> <input type="checkbox" id="generate" /> <label for="generate"> Generate </label> </li>
-                        <li> <input type="checkbox" id="reload" /> <label for="reload"> Reload </label> </li>
+                        <li> <button id="generate" /> <label for="generate"> Generate </label> </li>
+                        <li> <button id="reload" /> <label for="reload"> Reload </label> </li>
 
-                        <hr></hr>
+                        <hr/>
 
                     </ul>
             </div>
