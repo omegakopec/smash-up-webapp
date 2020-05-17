@@ -1,0 +1,8 @@
+.result-card{
+    background-color: blueviolet;
+    font: 24px;
+    border: black;
+    border-radius: 25px;
+    margin-left: 8px;
+    margin-right: 8px;
+}

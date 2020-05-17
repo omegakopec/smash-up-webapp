@@ -25,11 +25,10 @@ export default class FactionList extends Component{
                         <li> <input type="checkbox" id="incidentSet" /> <label for="incidentSet"> International Incident </label> </li>
                         <li> <input type="checkbox" id="penguinsSet" /> <label for="penguinsSet"> Penguins </label> </li>
                         <li> <input type="checkbox" id="cultureSet" /> <label for="cultureSet"> Culture Shock </label> </li>
-                        <li> <input type="checkbox" id="selectAll" /> <label for="selectAll"> All </label> </li>
-                        
+
                         <br/>
-                        
-                        <li> <button id="generate" /> <label for="generate"> Generate </label> </li>
+
+                        <li><input type="checkbox" id="selectAll"/> <label htmlFor="selectAll"> All </label></li>
 
                         <hr/>
 
