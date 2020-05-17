@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './sidebar.css';
+import './FactionList.css';
 
-export default class Sidebar extends Component{
+export default class FactionList extends Component{
     render(){
         return (
             <div class="checkbox-container">
@@ -30,7 +30,6 @@ export default class Sidebar extends Component{
                         <br/>
                         
                         <li> <button id="generate" /> <label for="generate"> Generate </label> </li>
-                        <li> <button id="reload" /> <label for="reload"> Reload </label> </li>
 
                         <hr/>
 

@@ -4,8 +4,8 @@ export default class Results extends Component{
 
     render(){
         return(
-            <div>
-                <p>Generate Results</p>
+            <div className="results-wrapper">
+                <input type="button" id="generate"/> <label for="Generate">Generate</label>
             </div>
         )
     }

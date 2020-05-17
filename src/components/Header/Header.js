@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from '../../images/logo/smashup-logo.png';
-import './header.css'
+import './Header.css'
 
 const Header = () => {
     return(
         <div class="header">
-            <img src={logo} alt="" />
+            <img src={logo} alt="" height="150px" width="300px" />
         </div>
     )
 }
