@@ -14,7 +14,6 @@ function App() {
             <FactionList />
             <Results />
           </div>
-      <Footer />
     </div>
   );
 }
