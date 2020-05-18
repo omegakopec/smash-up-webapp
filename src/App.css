@@ -4,7 +4,11 @@
 
 .body-wrapper{
     background-color: azure;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
     border-radius: 25px;
+
     margin: 18px;
     padding-top: 2px;
     padding-bottom: 2px;

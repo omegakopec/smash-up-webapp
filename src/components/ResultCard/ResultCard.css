@@ -1,8 +1,19 @@
-.result-card{
-    background-color: blueviolet;
+.result-card {
+    background-color: ghostwhite;
     font: 24px;
     border: black;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 25px;
-    margin-left: 8px;
-    margin-right: 8px;
+    text-align: center;
+}
+#card-title{
+    font-family: fantasy;
+    font-size: 16px;
+}
+
+p{
+    font-family: fantasy;
+    align-content: center;
+    font-size: 22px;
 }
