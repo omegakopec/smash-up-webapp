@@ -1,0 +1,23 @@
+#card-list{
+    list-style-type: none;
+    overflow: hidden;
+    align-items: stretch;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#card{
+    float: left;
+    display: block;
+    flex: 0 1 auto;
+    text-decoration: none;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 300px;
+}
+
+
+

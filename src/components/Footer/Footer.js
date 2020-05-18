@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () =>{
     return (
         <div className="footer">
-            <p>I am the footer</p>
+            <p>&copy; SmashUpRandomizer</p>
         </div>
     )
 }
