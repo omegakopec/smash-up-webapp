@@ -3,8 +3,6 @@ import './App.css';
 import Header from './components/Header/Header'
 import FactionList from "./components/FactionList/FactionList";
 import Results from "./components/Results/Results";
-import Footer from './components/Footer/Footer'
-
 
 function App() {
   return (
