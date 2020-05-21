@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/logo/smashup-logo.png';
+import logo from '../../assets/logo/smashup-logo.png';
 import './Header.css'
 
 const Header = () => {
