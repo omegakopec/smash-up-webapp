@@ -1,8 +1,8 @@
-import playerCounterReducer from "./PlayerCounter";
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
+import playerCounterReducer from './PlayerCounter';
 
 const rootReducer = combineReducers({
-    playerCount : playerCounterReducer
+  playerCount: playerCounterReducer,
 
 });
 
