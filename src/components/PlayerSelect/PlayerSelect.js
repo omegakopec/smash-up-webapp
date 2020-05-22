@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import { FormControl, RadioGroup, Radio, FormControlLabel} from "@material-ui/core";
 import { useDispatch } from "react-redux";
 import { twoPlayers, threePlayers , fourPlayers} from "../../actions";
