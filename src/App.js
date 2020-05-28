@@ -6,7 +6,6 @@ import PlayerSelect from './components/PlayerSelect/PlayerSelect';
 import Results from './components/Results/Results';
 
 function App() {
-
   return (
     <div className="App">
       <Header />
