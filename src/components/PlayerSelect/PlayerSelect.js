@@ -9,7 +9,6 @@ const PlayerSelect = () => {
   const dispatch = useDispatch();
 
   return (
-
     <div className="player-select">
       <FormControl component="fieldset">
         <RadioGroup defaultValue="fourPlayers" aria-label="player-select" name="customized-radios">
