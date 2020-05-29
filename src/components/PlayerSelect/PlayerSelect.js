@@ -5,7 +5,6 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import { useDispatch } from 'react-redux';
 import { twoPlayers, threePlayers, fourPlayers } from '../../actions';
-import './playerSelect.css'
 
 const styles = makeStyles({
   label: {
