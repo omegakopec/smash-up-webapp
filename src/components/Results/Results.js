@@ -8,8 +8,7 @@ const generateCards = (players) => {
   for (let i = 1; i <= players; i++) {
     cardList.push(<li className="card">
       {' '}
-      <ResultCard name={`Player #${i}`} faction1="Pirates" faction2="Aliens" />
-                  </li>);
+      <ResultCard name={`Player #${i}`} faction1="Pirates" faction2="Aliens" /></li>);
   }
   console.log(cardList);
   return cardList;
