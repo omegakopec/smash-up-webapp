@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
-import FactionList from './components/FactionList/FactionList';
+import FactionList from './components/SetList/FactionList';
 import PlayerSelect from './components/PlayerSelect/PlayerSelect';
 import Results from './components/Results/Results';
 
