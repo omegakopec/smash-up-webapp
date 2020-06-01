@@ -6,6 +6,10 @@
     border-style: solid;
     border-radius: 25px;
     text-align: center;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 #card-title{
     font-family: fantasy;
