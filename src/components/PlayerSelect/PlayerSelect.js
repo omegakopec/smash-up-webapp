@@ -1,16 +1,16 @@
 import React from 'react';
 import {
-  FormControl, RadioGroup, Radio, FormControlLabel
+  FormControl, RadioGroup, Radio, FormControlLabel,
 } from '@material-ui/core';
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles';
 import { useDispatch } from 'react-redux';
 import { twoPlayers, threePlayers, fourPlayers } from '../../actions';
 
 const styles = makeStyles({
   label: {
-    textAlign: 'center',
-    display: 'left',
-    backgroundColor:'rgba(255, 255, 255, .9)',
+    fontSize: '20px',
+    alignContent: 'center',
+    backgroundColor: 'rgba(255, 255, 255, .9)',
     borderColor: '#b6e683',
     borderStyle: 'solid',
     borderWidth: '1px',
@@ -21,19 +21,26 @@ const styles = makeStyles({
     marginBottom: '3px',
     userSelect: 'none',
     transition: 'all .2s',
+    '&:hover':{
+      borderWidth: '1px',
+      borderStyle: 'solid',
+      borderColor: 'black',
+      backgroundColor: '#b6e683',
+      color: 'black',
+      transition: 'all .2s',
+    }
   },
-  root:{
-    visibility: 'hidden'
+  root: {
+    visibility: 'hidden',
   },
-  list:{
+  list: {
 
   },
-  ul :{
-    display: 'inline',
+  ul: {
+    display: 'flex',
+    alignItems: 'center',
     listStyle: 'none',
   },
-
-
 });
 
 const PlayerSelect = () => {
@@ -42,35 +49,36 @@ const PlayerSelect = () => {
 
   return (
     <div className="player-select">
+      <hr />
       <FormControl component="fieldset">
         <RadioGroup defaultValue="fourPlayers" aria-label="player-select" name="customized-radios">
           <ul className={classes.ul}>
             <li className={classes.list}>
               <FormControlLabel
-                  className={classes.label}
+                className={classes.label}
                 value="twoPlayers"
                 control={<Radio className={classes.root} />}
                 label="Two Players"
-                onClick={() => dispatch(twoPlayers())}
+                onChange={() => dispatch(twoPlayers())}
               />
             </li>
             <li>
               <FormControlLabel
-                  className={classes.label}
-                  value="threePlayers"
+                className={classes.label}
+                value="threePlayers"
                 control={<Radio className={classes.root} />}
                 label="Three Players"
-                onClick={() => dispatch(threePlayers())}
+                onChange={() => dispatch(threePlayers())}
               />
             </li>
             <li>
               <FormControlLabel
-                  className={classes.label}
+                className={classes.label}
 
-                  value="fourPlayers"
+                value="fourPlayers"
                 control={<Radio className={classes.root} />}
                 label="Four Players"
-                onClick={() => dispatch(fourPlayers())}
+                onChange={() => dispatch(fourPlayers())}
               />
             </li>
           </ul>
