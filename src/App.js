@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import FactionList from './components/SetList/FactionList';
 import PlayerSelect from './components/PlayerSelect/PlayerSelect';
 import Results from './components/Results/Results';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <PlayerSelect />
         <Results />
       </div>
+      <Footer />
+
     </div>
   );
 }
