@@ -1,15 +1,10 @@
 .result-card {
-    background-color: ghostwhite;
-    font: 24px;
-    border: black;
-    border-width: 1px;
-    border-style: solid;
+    background-color: white;
+    font-size: 24px;
+    border: black 1px solid;
     border-radius: 25px;
     text-align: center;
     width: 200px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
 }
 #card-title{
     font-family: fantasy;

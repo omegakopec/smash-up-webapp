@@ -11,19 +11,16 @@ const generateCards = (players) => {
       <ResultCard name={`Player #${i}`} faction1="Pirates" faction2="Aliens" />
                   </li>);
   }
-  console.log(cardList);
   return cardList;
 };
 
 
 const Results = () => {
   const playerTotal = useSelector((state) => state.playerCount);
-  generateCards(playerTotal);
-  //    <p>Total Number of players is: {playerTotal}</p>
 
   return (
     <div className="results-wrapper">
-      <div className="card-container">
+      <div className="table">
         <ul id="card-list">
           {generateCards(playerTotal)}
         </ul>
