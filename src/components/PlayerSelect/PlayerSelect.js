@@ -22,10 +22,10 @@ const styles = makeStyles({
     borderWidth: '1px',
     borderRadius: '25px',
     whiteSpace: 'nowrap',
-    marginTop: '3px',
-    marginBottom: '3px',
+    margin: '3px 0',
     transition: 'all .2s',
-    '&:checked': {
+    padding: '8px 18px 8px 0',
+    '&:hover': {
       borderWidth: '1px',
       borderStyle: 'solid',
       borderColor: 'black',
@@ -34,15 +34,6 @@ const styles = makeStyles({
       transition: 'all .2s',
     },
   },
-  MuiIconButton: {
-    pageXOffset: '-600',
-  },
-
-  MuiRadio: {
-    visibility: 'hidden',
-    appearance: 'none',
-  },
-
   ul: {
     display: 'flex',
     alignItems: 'center',
@@ -50,6 +41,7 @@ const styles = makeStyles({
     margin: '0',
     padding: '0',
   },
+
 });
 
 const PlayerSelect = () => {
@@ -67,8 +59,7 @@ const PlayerSelect = () => {
               <li className={classes.list}>
                 <FormControlLabel
                   className={classes.label}
-                  value="twoPlayers"
-                  control={<Radio className={classes.root} />}
+                  control={<Radio icon={null} checkedIcon={null} className={classes.root}/>}
                   label="Two Players"
                   onChange={() => dispatch(twoPlayers())}
                 />
@@ -76,8 +67,7 @@ const PlayerSelect = () => {
               <li>
                 <FormControlLabel
                   className={classes.label}
-                  value="threePlayers"
-                  control={<Radio className={classes.root} />}
+                  control={<Radio icon={null} checkedIcon={null} className={classes.radio} />}
                   label="Three Players"
                   onChange={() => dispatch(threePlayers())}
                 />
@@ -85,9 +75,7 @@ const PlayerSelect = () => {
               <li>
                 <FormControlLabel
                   className={classes.label}
-
-                  value="fourPlayers"
-                  control={<Radio className={classes.root} />}
+                  control={<Radio icon={null} checkedIcon={null} className={classes.root} />}
                   label="Four Players"
                   onChange={() => dispatch(fourPlayers())}
                 />
