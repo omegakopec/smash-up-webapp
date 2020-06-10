@@ -1,11 +1,10 @@
 import { combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form';
 import playerCounterReducer from './PlayerCounter';
-import selectedExpansionsReducer from './SelectedExpansions';
 
 const rootReducer = combineReducers({
   playerCount: playerCounterReducer,
-  selectedExpansions: selectedExpansionsReducer,
-
+  form: formReducer,
 });
 
 export default rootReducer;
