@@ -59,7 +59,7 @@ const PlayerSelect = () => {
               <li className={classes.list}>
                 <FormControlLabel
                   className={classes.label}
-                  control={<Radio icon={null} checkedIcon={null} className={classes.root}/>}
+                  control={<Radio icon={null} checkedIcon={null} className={classes.root} />}
                   label="Two Players"
                   onChange={() => dispatch(twoPlayers())}
                 />
