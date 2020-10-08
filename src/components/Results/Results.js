@@ -6,9 +6,11 @@ import './Results.css';
 const generateCards = (players) => {
   const cardList = [];
   for (let i = 1; i <= players; i++) {
-    cardList.push(<li className="card">
-      <ResultCard name={`Player #${i}`} faction1="Pirates" faction2="Aliens" />
-                  </li>);
+    cardList.push(
+      <li className="card">
+        <ResultCard name={`Player #${i}`} faction1="Pirates" faction2="Aliens" />
+      </li>,
+    );
   }
   return cardList;
 };
