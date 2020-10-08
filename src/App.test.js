@@ -1,3 +1,5 @@
+/* eslint no-undef: 0 */ // --> OFF
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';

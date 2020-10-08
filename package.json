@@ -1,23 +1,7 @@
 {
   "name": "smash-up-randomizer",
+  "description": "Smash Up Card Game Randomizer",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "4.11.0",
-    "@material-ui/styles": "4.10.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-redux": "7.2.1",
-    "react-scripts": "3.4.3",
-    "redux": "4.0.5",
-    "redux-form": "8.3.6",
-    "redux-thunk": "2.3.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
-  },
-  "devDependencies": {},
   "browserslist": {
     "production": [
       ">0.2%",
@@ -29,5 +13,35 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@material-ui/core": "4.11.0",
+    "@material-ui/styles": "4.10.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-redux": "7.2.1",
+    "react-scripts": "3.4.3",
+    "redux": "4.0.5",
+    "redux-form": "8.3.6",
+    "redux-thunk": "2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "7.10.0",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-react": "7.21.3",
+    "eslint-plugin-react-hooks": "4.1.2",
+    "fixpack": "3.0.6"
+  },
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "fix-package": "fixpack",
+    "lint": "eslint --fix src",
+    "lint-no-fix": "eslint src",
+    "start": "react-scripts start"
   }
 }
