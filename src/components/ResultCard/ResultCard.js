@@ -17,8 +17,8 @@ export default function ResultsCard(props) {
         {`${props.faction2}`}
       </p>
       <div className="logo-container">
-        <img src={ pirateLogo } alt="" id="factionLogo" height="50" width="50" />
-        <img src={ alienLogo } alt="" id="factionLogo" height="50" width="50" />
+        <img src={pirateLogo} alt="" id="factionLogo" height="50" width="50" />
+        <img src={alienLogo} alt="" id="factionLogo" height="50" width="50" />
       </div>
 
     </div>
