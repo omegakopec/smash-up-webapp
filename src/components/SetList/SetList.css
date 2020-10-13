@@ -9,51 +9,14 @@
     margin-bottom: 0;
 }
 
-ul.cb-tags{
-    list-style: none;
+ul {
+    list-style: inside;
     align-content: center;
-    padding: 16px;
-}
-
-ul.cb-tags li{
-    display: inline;
-}
-
-ul.cb-tags li label{
     display: inline-block;
-    background-color: rgba(255, 255, 255, .9);
-    border: 1px solid #b6e683;
-    color: black;
-    border-radius: 25px;
-    white-space: nowrap;
-    margin: 3px 0;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: all .2s;
-    padding: 8px 12px;
-    cursor: pointer;
+    margin: 0 10px;
+    padding: 0;
 }
 
-ul.cb-tags li label::before {
+ul li{
     display: inline-block;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    padding: 2px 6px 2px 2px;
-    transition: transform .3s ease-in-out;
-}
-
-ul.cb-tags li input[type="checkbox"]:checked + label {
-    border: 1px solid black;
-    background-color: #b6e683;
-    color: black;
-    transition: all .2s;
-}
-
-ul.cb-tags li input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
 }
