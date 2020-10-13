@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
-import { reducer as formReducer } from 'redux-form';
 import playerCounterReducer from './PlayerCounter';
+import selectedFactionReducer from './SelectedFactions';
+import factionCounterReducer from "./factionCounter";
 
 const rootReducer = combineReducers({
   playerCount: playerCounterReducer,
-  form: formReducer,
+  selectedFactions: selectedFactionReducer,
+  factionCounter: factionCounterReducer,
 });
 
 export default rootReducer;
