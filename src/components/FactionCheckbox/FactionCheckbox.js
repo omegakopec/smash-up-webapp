@@ -18,7 +18,7 @@ const FactionCheckbox = ({ name, label, factions }) => {
         id={label}
         onChange={() => {
           setChecked(!checked);
-          if (!checked) dispatch({ type: 'ADD_FACTIONS', payload: factions })
+          if (!checked) dispatch({ type: 'ADD_FACTIONS', payload: factions });
           else dispatch({ type: 'REMOVE_FACTIONS', payload: factions });
         }}
       />
