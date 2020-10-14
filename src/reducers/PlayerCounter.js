@@ -7,7 +7,7 @@ const playerCounterReducer = (state, action) => {
     case 'FOUR_PLAYERS':
       return 4;
     default:
-      return 4;
+      return 0;
   }
 };
 
