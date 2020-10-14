@@ -12,7 +12,7 @@ const generateCards = (players, selectedFactions) => {
   for (let i = 0; i < players; i += 1) {
     cardList.push(
       <li className="card">
-        <ResultCard name={`Player #${i + 1}`} faction1={selectedFactions[2*i]} faction2={selectedFactions[2*i + 1]} />
+        <ResultCard name={`Player #${i + 1}`} faction1={selectedFactions[2 * i]} faction2={selectedFactions[2 * i + 1]} />
       </li>,
     );
   }
