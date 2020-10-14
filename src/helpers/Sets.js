@@ -22,7 +22,7 @@ const sets = [
   {
     label: 'monsterSmash',
     name: 'Monster Smash',
-    factions: ['Vampires', 'Killer Ants', 'Mad Scientists', 'Werewolves'],
+    factions: ['Vampires', 'Giant Ants', 'Mad Scientists', 'Werewolves'],
   },
   {
     label: 'prettyPretty',
@@ -62,7 +62,7 @@ const sets = [
   {
     label: 'that70s',
     name: 'That 70s Expansion',
-    factions: ['Disco Dancers', 'Kung Fu Fighters', 'Truckers', 'Vigilantes.'],
+    factions: ['Disco Dancers', 'Kung Fu Fighters', 'Truckers', 'Vigilantes'],
   },
   {
     label: 'geekierBox',
@@ -87,7 +87,7 @@ const sets = [
   {
     label: 'cultureShock',
     name: 'Culture Shock',
-    factions: ['Anansi Tales', 'Ancient Incas', 'Grimms’ Fairy Tales', 'Polynesian Voyagers',
+    factions: ['Anansi Tales', 'Ancient Incas', 'Grimms Fairy Tales', 'Polynesian Voyagers',
       'Russian Fairy Tales'],
   },
 ];
