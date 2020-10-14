@@ -2,8 +2,9 @@ import React from 'react';
 import {
   FormControl, RadioGroup, Radio, FormControlLabel, createMuiTheme, MuiThemeProvider,
 } from '@material-ui/core';
+import propTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import { useDispatch, connect} from 'react-redux';
+import { useDispatch, connect } from 'react-redux';
 import { twoPlayers, threePlayers, fourPlayers } from '../../actions';
 
 const theme = createMuiTheme({
@@ -43,16 +44,14 @@ const styles = makeStyles({
   },
 });
 
-const PlayerSelect = (props) => {
+const PlayerSelect = ({ factionNumber }) => {
   const dispatch = useDispatch();
   const classes = styles();
 
   return (
     <MuiThemeProvider theme={theme}>
       <div className="player-select">
-        {props.factionNumber}
-        <hr/>
-        {props.facNum}
+        {factionNumber}
         <hr />
         <h2 id="checkbox-header">Select Number Of Players</h2>
         <FormControl component="fieldset">
@@ -64,7 +63,7 @@ const PlayerSelect = (props) => {
                   control={<Radio icon={null} checkedIcon={null} className={classes.root} />}
                   label="Two Players"
                   onChange={() => dispatch(twoPlayers())}
-                  disabled={props.factionNumber < 4}
+                  disabled={factionNumber < 4}
                 />
               </li>
               <li>
@@ -73,7 +72,7 @@ const PlayerSelect = (props) => {
                   control={<Radio icon={null} checkedIcon={null} className={classes.radio} />}
                   label="Three Players"
                   onChange={() => dispatch(threePlayers())}
-                  disabled={props.factionNumber < 6}
+                  disabled={factionNumber < 6}
                 />
               </li>
               <li>
@@ -82,7 +81,7 @@ const PlayerSelect = (props) => {
                   control={<Radio icon={null} checkedIcon={null} className={classes.root} />}
                   label="Four Players"
                   onChange={() => dispatch(fourPlayers())}
-                  disabled={props.factionNumber < 8}
+                  disabled={factionNumber < 8}
                 />
               </li>
             </ul>
@@ -95,7 +94,10 @@ const PlayerSelect = (props) => {
 
 const mapStateToProps = (state) => ({
   factionNumber: state.selectedFactions.length,
-  facNum: state.factionCounter
 });
 
-export default connect(mapStateToProps)(PlayerSelect)
+PlayerSelect.propTypes = {
+  factionNumber: propTypes.number.isRequired,
+};
+
+export default connect(mapStateToProps)(PlayerSelect);
