@@ -36,12 +36,16 @@ const styles = makeStyles({
     },
   },
   ul: {
-    display: 'flex',
+    display: 'block',
     alignItems: 'center',
     listStyle: 'none',
     margin: '0',
     padding: '0',
+    maxWidth: 'auto'
   },
+  list: {
+    padding: '4px'
+  }
 });
 
 const PlayerSelect = ({ factionNumber }) => {
@@ -66,7 +70,7 @@ const PlayerSelect = ({ factionNumber }) => {
                   disabled={factionNumber < 4}
                 />
               </li>
-              <li>
+              <li className={classes.list}>
                 <FormControlLabel
                   className={classes.label}
                   control={<Radio icon={null} checkedIcon={null} className={classes.radio} />}
@@ -75,7 +79,7 @@ const PlayerSelect = ({ factionNumber }) => {
                   disabled={factionNumber < 6}
                 />
               </li>
-              <li>
+              <li className={classes.list}>
                 <FormControlLabel
                   className={classes.label}
                   control={<Radio icon={null} checkedIcon={null} className={classes.root} />}
