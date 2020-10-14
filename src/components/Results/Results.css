@@ -1,10 +1,11 @@
 .table{
-    display: table;
+    display: inline-block;
     margin: 0 auto;
+    width: fit-content;
 }
 
 ul#card-list{
-    min-width: 696px;
+    min-width: auto;
     list-style: none;
     margin: 0;
     padding: 16px;
@@ -13,6 +14,12 @@ ul#card-list{
 ul#card-list li{
     display: inline-block;
     padding: 8px 28px ;
+}
+
+@media (max-width: 328px){
+    ul#card-list li{
+        padding: 8px 8px ;
+    }
 }
 
 
