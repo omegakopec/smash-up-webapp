@@ -11,6 +11,7 @@ const theme = createMuiTheme({
   typography: {
     alignContent: 'center',
     fontFamily: 'Papyrus,fantasy',
+    fontSize: '15.75'
   },
 });
 
@@ -44,7 +45,7 @@ const styles = makeStyles({
     maxWidth: 'auto',
   },
   list: {
-    padding: '4px',
+    padding: '2px',
   },
 });
 
