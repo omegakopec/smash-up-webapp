@@ -1,27 +1,39 @@
+/* eslint import/no-dynamic-require: 0 */ // --> OFF
+
 import React from 'react';
 import propTypes from 'prop-types';
 import './ResultCard.css';
 
-const convertName = (factionName) => factionName.replace(/ /g, '_');
-
 const ResultsCard = ({ name, faction1, faction2 }) => (
   <div className="result-card">
     <h4 id="card-title">
-      {`${name}`}
+      {name}
     </h4>
-    <p>
-      {`${faction1}`}
+    <div className="faction-wrapper">
+      {faction1}
       <div className="logo-container">
-        <img src={require(`../../assets/FactionLogos/${convertName(faction1)}.png`)} alt="faction1" id="factionLogo" height="60" width="45" />
+        <img
+          src={require(`../../assets/FactionLogos/${faction1.replace(/ /g, '_')}.png`)}
+          alt="faction1"
+          id="factionLogo"
+          height="60"
+          width="45"
+        />
       </div>
-    </p>
+    </div>
     <p>&</p>
-    <p>
-      {`${faction2}`}
+    <div className="faction-wrapper">
+      {faction2}
       <div className="logo-container">
-        <img src={require(`../../assets/FactionLogos/${convertName(faction2)}.png`)} alt="faction1" id="factionLogo" height="60" width="45" />
+        <img
+          src={require(`../../assets/FactionLogos/${faction2.replace(/ /g, '_')}.png`)}
+          alt="faction1"
+          id="factionLogo"
+          height="60"
+          width="45"
+        />
       </div>
-    </p>
+    </div>
   </div>
 );
 
