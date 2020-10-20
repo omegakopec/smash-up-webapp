@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => (
   <div className="footer">
-    <p>&copy; SmashUpRandomizer</p>
+    <p>&copy;2020 SmashUpTools</p>
   </div>
 );
 
