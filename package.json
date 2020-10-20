@@ -22,12 +22,13 @@
     "react-dom": "16.13.1",
     "react-redux": "7.2.1",
     "react-scripts": "3.4.3",
+    "react-tooltip": "^4.2.10",
     "redux": "4.0.5",
     "redux-form": "8.3.6",
     "redux-thunk": "2.3.0"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
+    "eslint": "6.6.0",
     "eslint-config-airbnb": "18.2.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.3.1",
