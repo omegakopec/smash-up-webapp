@@ -6,16 +6,17 @@
     text-align: center;
     min-width: 240px;
     min-height: 330px;
+    opacity: 75%;
 }
 
 .logo-container {
-    padding: 0;
+    padding: 10px 0 0 0 ;
 }
 #card-title{
     font-family: Papyrus,fantasy;
-    font-size: 28px;
+    font-size: 24px;
     margin: 0;
-    padding: 8px;
+    padding: 8px 8px 0 8px;
     font-weight: 500;
 }
 
@@ -25,4 +26,11 @@ p{
     font-size: 22px;
     padding: 0 0;
     margin: 5px 5px;
+}
+.faction-wrapper {
+    border: black 1px solid;
+    border-radius: 25px;
+    padding: 0;
+    margin: 0 8px;
+    background-color: #f1ffe3;
 }
