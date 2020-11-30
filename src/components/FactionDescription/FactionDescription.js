@@ -1,9 +1,14 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import factionDescription from '../../helpers/FactionDescription';
 
 const FactionDescription = ({ faction }) => (
   <div>
-    <p>{faction}</p>
+    <p id="faction-description">
+      {' '}
+      {factionDescription[faction.replace(/ /g, '_')]}
+      {' '}
+    </p>
   </div>
 );
 
