@@ -32,10 +32,10 @@ p{
     background-color: #f1ffe3;
 }
 #modal-title{
-    font-family: Papyrus,fantasy;
-    font-size: 18px;
+    font-size: 24px;
 }
-#modal-text{
+
+#faction-description{
     font-size: 16px;
-    padding-bottom: 28px;
+    padding-top: 8px;
 }
