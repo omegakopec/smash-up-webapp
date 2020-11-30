@@ -71,7 +71,7 @@ const factionDescription = {
   Anansi_Tales: 'Village Stories',
   Ancient_Incas: 'Native Dudes',
   Grimms_Fairy_Tales: 'Folklore',
-  Polynesian_Villagers: 'Gimme da island',
+  Polynesian_Voyagers: 'Gimme da island',
 };
 
 export default factionDescription;
