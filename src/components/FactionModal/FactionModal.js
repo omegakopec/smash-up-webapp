@@ -5,33 +5,47 @@ import FactionLogo from '../FactionLogo/FactionLogo';
 import FactionDescription from '../FactionDescription/FactionDescription';
 
 const FactionModal = ({ faction }) => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const openModal = () => setModalIsOpen(true);
-  // const closeModal = () => setModalIsOpen(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const openModal = () => { setIsOpen(true); };
+  const closeModal = () => { setIsOpen(false); };
 
   return (
-    <div className="faction-wrapper" role="presentation" onClick={openModal}>
-      {faction}
-      <FactionLogo faction={faction} />
+    <div className="faction-wrapper">
+      <div onClick={openModal} onKeyPress={openModal} role="presentation">
+        {faction}
+        <FactionLogo faction={faction} />
+      </div>
       <Modal
         isOpen={modalIsOpen}
-        onRequestClose={() => setModalIsOpen(false)}
+        onRequestClose={closeModal}
+        shouldCloseOnOverlayClick
+        ariaHideApp={false}
         style={{
           content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
             backgroundColor: '#f1ffe3',
             margin: 'auto',
             textAlign: 'center',
             borderRadius: '25px',
-            maxHeight: '500px',
-            maxWidth: '300px',
+            maxWidth: '350px',
+            minHeight: 'fit-content',
           },
         }}
       >
-        <h4>{faction}</h4>
-        <p id="modal-text">
+        <div id="faction-description">
+          <p id="modal-title">
+            {' '}
+            {faction}
+            {' '}
+          </p>
+          <FactionLogo faction={faction} />
           <FactionDescription faction={faction} />
-        </p>
-        <FactionLogo faction={faction} />
+        </div>
       </Modal>
     </div>
   );
