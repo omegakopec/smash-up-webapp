@@ -1,21 +1,18 @@
 import React from 'react';
-import './App.css';
-import Header from './components/Header/Header';
-import SetList from './components/SetList/SetList';
-import PlayerSelect from './components/PlayerSelect/PlayerSelect';
-import Results from './components/Results/Results';
-import Footer from './components/Footer/Footer';
+import { Router, Route, Switch } from 'react-router';
+import history from './helpers/History/History';
+import Home from './pages/Home/Home';
+import Randomizer from './pages/Randomizer/Randomizer';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <div className="body-wrapper">
-        <SetList />
-        <PlayerSelect />
-        <Results />
-      </div>
-      <Footer />
+      <Router history={history}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/randomizer" component={Randomizer} />
+        </Switch>
+      </Router>
     </div>
   );
 }

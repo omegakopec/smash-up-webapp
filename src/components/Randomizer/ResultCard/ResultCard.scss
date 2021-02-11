@@ -1,0 +1,23 @@
+@import "../../../styles/styles";
+
+.result-card {
+    background-color: white;
+    font-family: main-font, sans-serif;
+    font-size: 26px;
+    color: $black-blue;
+    border: solid 2px $black-blue;
+    border-radius: 25px;
+    text-align: center;
+    min-width: 240px;
+    min-height: 300px;
+}
+
+#card-title{
+    margin: 0;
+    padding: 8px 8px 0 8px;
+    font-weight: 500;
+}
+p{
+    padding: 0;
+    margin: 5px;
+}

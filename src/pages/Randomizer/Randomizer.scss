@@ -1,0 +1,36 @@
+@import "../../styles/styles";
+
+.body-wrapper {
+  background-color: $light-green;
+  border: solid 1px $dark-gray;
+  border-radius: 25px;
+  margin: 18px;
+  text-align: center;
+
+  > h1 {
+    font-family: custom-bold, sans-serif;
+    font-size: 80px;
+    margin: 0;
+    padding: 8px;
+    color: $black-blue;
+  }
+
+  > h2 {
+    font-family: main-font, sans-serif;
+    font-size: 56px;
+    margin: 0;
+    padding: 8px;
+    color: $black-blue;
+  }
+}
+
+@media (max-width: 762px) {
+  .body-wrapper {
+    > h1 {
+      font-size: 40px;
+    }
+    > h2 {
+      font-size: 36px;
+    }
+  }
+}

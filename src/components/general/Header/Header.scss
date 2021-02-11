@@ -1,0 +1,18 @@
+@import "../../../styles/styles";
+
+.header{
+    text-align: center;
+}
+
+#main-title {
+    font-size: 144px;
+    font-family: custom-bold, sans-serif;
+    margin: 0;
+    color: $black-blue;
+}
+
+@media (max-width: 762px) {
+    #main-title {
+        font-size: 56px;
+    }
+}

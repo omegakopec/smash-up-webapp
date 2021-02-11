@@ -1,0 +1,42 @@
+@import "../../../styles/styles";
+
+.faction-checkbox label {
+    font-family: main-font, sans-serif;
+    font-size: 26px;
+    display: inline-block;
+    background-color: white;
+    border: 2px solid $primary-green;
+    color: $black-blue;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.faction-checkbox label::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    padding: 2px 6px 2px 2px;
+    transition: transform .3s ease-in-out;
+}
+
+.faction-checkbox input[type="checkbox"]:checked + label {
+    border: 2px solid $black-blue;
+    background-color: $primary-green;
+    color: $black-blue;
+    transition: all .2s;
+}
+
+.faction-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}

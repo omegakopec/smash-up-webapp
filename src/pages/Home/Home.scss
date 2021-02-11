@@ -1,0 +1,35 @@
+@import "../../styles/styles";
+
+.body-wrapper {
+  background-color: $light-green;
+  border: solid 1px $dark-gray;
+  border-radius: 25px;
+  margin: 18px;
+  color: $dark-gray;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 28px;
+  padding: 15px;
+  font-family: main-font, sans-serif;
+}
+
+.link-button {
+  background-color: white; /* Green */
+  border: solid 2px $primary-green;
+  border-radius: 25px;
+  padding: 8px 12px;
+  font-family: main-font, sans-serif;
+  font-size: 26px;
+  color: $black-blue;
+  text-align: center;
+  outline: none;
+}
+
+.link-button:hover {
+  background-color: $primary-green;
+  border: solid 2px $black-blue;
+  color: $black-blue;
+  transition: all .2s;
+}
