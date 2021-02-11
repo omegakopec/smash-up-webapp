@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import factionDescription from '../../helpers/FactionDescription';
+import factionDescription from '../../../lib/FactionDescription';
 
 const FactionDescription = ({ faction }) => (
   <div>

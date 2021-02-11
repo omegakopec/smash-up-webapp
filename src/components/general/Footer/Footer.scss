@@ -1,0 +1,14 @@
+@import "../../../styles/styles";
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;
+}
+
+.copy-text {
+    text-align: center;
+    font-family: custom-bold, sans-serif;
+    font-size: 36px;
+    color: $black-blue;
+}

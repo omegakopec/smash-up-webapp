@@ -1,16 +1,16 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import FactionModal from '../FactionModal/FactionModal';
-import './ResultCard.css';
+import FactionResult from '../FactionResult/FactionResult';
+import './ResultCard.scss';
 
 const ResultsCard = ({ name, faction1, faction2 }) => (
   <div className="result-card">
     <h4 id="card-title">
       {name}
     </h4>
-    <FactionModal faction={faction1} />
+    <FactionResult faction={faction1} />
     <p>&</p>
-    <FactionModal faction={faction2} />
+    <FactionResult faction={faction2} />
   </div>
 );
 

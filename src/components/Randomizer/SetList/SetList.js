@@ -1,14 +1,13 @@
 import React from 'react';
-import './SetList.css';
+import './SetList.scss';
 import FactionCheckbox from '../FactionCheckbox/FactionCheckbox';
-import sets from '../../helpers/Sets';
+import sets from '../../../lib/Sets';
 
 const SetList = () => (
   <div className="checkbox-container">
-    <h2 id="checkbox-header">Select Your Expansions</h2>
     <ul>
       {sets.map((set) => (
-        <li>
+        <li key={set.name}>
           <FactionCheckbox name={set.name} label={set.label} factions={set.factions} />
         </li>
       ))}

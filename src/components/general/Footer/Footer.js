@@ -1,9 +1,11 @@
 import React from 'react';
-import './Footer.css';
+import './Footer.scss';
 
 const Footer = () => (
   <div className="footer">
-    <p>&copy;2020 SmashUpTools</p>
+    <p className="copy-text">
+      &copy;2021 SmashUpTools
+    </p>
   </div>
 );
 

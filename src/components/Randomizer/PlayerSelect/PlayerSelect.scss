@@ -1,0 +1,37 @@
+@import "src/styles/styles.scss";
+
+.player-select {
+    padding: 16px;
+}
+
+.label{
+    align-content: center;
+    background-color: white;
+    border: solid 2px $primary-green;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0;
+    transition: all .2s;
+    padding: 8px 18px 8px 0;
+    height: 30px;
+}
+.label:hover {
+    border: 2px solid $black-blue;
+    background-color: $primary-green;
+    transition: all .2s;
+}
+.ul {
+    display: block;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list{
+    padding: 0;
+}
+.typography{
+    align-content: center;
+    font-family: Papyrus, fantasy;
+    font-size: 16px;
+}

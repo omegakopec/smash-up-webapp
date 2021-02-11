@@ -1,12 +1,12 @@
-.tooltip {
-    font-size: 16px !important;
-}
+@import "../../../styles/styles";
 
 .faction-checkbox label {
+    font-family: main-font, sans-serif;
+    font-size: 26px;
     display: inline-block;
-    background-color: rgba(255, 255, 255, .9);
-    border: 1px solid #b6e683;
-    color: black;
+    background-color: white;
+    border: 2px solid $primary-green;
+    color: $black-blue;
     border-radius: 25px;
     white-space: nowrap;
     margin: 3px 0;
@@ -30,9 +30,9 @@
 }
 
 .faction-checkbox input[type="checkbox"]:checked + label {
-    border: 1px solid black;
-    background-color: #b6e683;
-    color: black;
+    border: 2px solid $black-blue;
+    background-color: $primary-green;
+    color: $black-blue;
     transition: all .2s;
 }
 

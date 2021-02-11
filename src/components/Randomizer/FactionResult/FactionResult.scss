@@ -1,0 +1,41 @@
+@import "../../../styles/styles";
+
+.faction-results-body {
+    margin: 8px;
+    background: $light-green;
+    border: solid 2px $black-blue;
+    border-radius: 25px;
+    text-align: center;
+}
+.modal {
+    font-family: main-font, sans-serif;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    border: solid 2px $black-blue;
+    border-radius: 25px;
+    background-color: $light-green;
+    padding: 8px;
+    margin: auto;
+    max-width: 350px;
+    min-height: fit-content;
+    outline: none;
+    text-align: center;
+}
+
+.modal-title {
+    margin: 8px;
+    padding: 8px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+@media (max-width: 540px) {
+    .modal {
+        min-width: 75%;
+    }
+}
