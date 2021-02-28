@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Router history={history}>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/randomizer" component={Randomizer} />
+          <Route path="/" component={Home} />
+          <Route path="/randomizer" component={Randomizer} />
         </Switch>
       </Router>
     </div>
