@@ -90,14 +90,12 @@ const sets = [
     factions: ['Anansi Tales', 'Ancient Incas', 'Grimms Fairy Tales', 'Polynesian Voyagers',
       'Russian Fairy Tales'],
   },
-  /*
   {
     label: 'marvel',
     name: 'Marvel',
     factions: ['Avengers', 'Hydra', 'Kree', 'Masters of Evil',
-    'SHIELD', 'Sinister Six', 'Spider Verse', 'Ultimates'],
+      'SHIELD', 'Sinister Six', 'Spider Verse', 'Ultimates'],
   },
-  */
 ];
 
 export default sets;
