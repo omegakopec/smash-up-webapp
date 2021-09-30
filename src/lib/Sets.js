@@ -96,6 +96,16 @@ const sets = [
     factions: ['Avengers', 'Hydra', 'Kree', 'Masters of Evil',
       'SHIELD', 'Sinister Six', 'Spider Verse', 'Ultimates'],
   },
+  {
+    label: 'goblins',
+    name: 'Goblins',
+    factions: ['Goblins'],
+  },
+  {
+    label: 'knightsOfTheLastTable',
+    name: 'Knights of the Last Table',
+    factions: ['Knights of the Last Table'],
+  },
 ];
 
 export default sets;
