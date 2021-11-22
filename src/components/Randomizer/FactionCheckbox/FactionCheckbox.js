@@ -1,5 +1,3 @@
-/* eslint react/forbid-prop-types: 0 */ // --> OFF
-
 import React, { useEffect, useState } from 'react';
 import propTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
