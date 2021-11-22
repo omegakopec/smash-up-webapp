@@ -1,13 +1,13 @@
 import React from 'react';
 import {
-  FormControl, RadioGroup, Radio, FormControlLabel, createMuiTheme, MuiThemeProvider,
+  FormControl, RadioGroup, Radio, FormControlLabel, createTheme, MuiThemeProvider,
 } from '@material-ui/core';
 import propTypes from 'prop-types';
 import { useDispatch, connect } from 'react-redux';
 import { twoPlayers, threePlayers, fourPlayers } from '../../../actions';
 import './PlayerSelect.scss';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   typography: {
     alignContent: 'center',
     fontFamily: 'main-font, sans-serif',
