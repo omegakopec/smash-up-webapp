@@ -1,12 +1,10 @@
-/* eslint react/forbid-prop-types: 0 */ // --> OFF
-
 import React from 'react';
-import propTypes from 'prop-types';
 import Header from '../../components/general/Header/Header';
 import Footer from '../../components/general/Footer/Footer';
 import './Home.scss';
+import { Link } from 'react-router-dom';
 
-const Home = ({ history }) => (
+const Home = () => (
   <div className="home-page">
     <Header />
     <div className="body-wrapper">
@@ -26,9 +24,10 @@ const Home = ({ history }) => (
         select your random factions to play with.
       </p>
       <div>
-        <button className="link-button" type="button" onClick={() => history.push('./randomizer')}>
+        <Link to={"/randomizer"}><button className="link-button" type="button">
           Randomizer
         </button>
+        </Link>
       </div>
 
       <p className="paragraph">
@@ -41,8 +40,5 @@ const Home = ({ history }) => (
   </div>
 );
 
-Home.propTypes = {
-  history: propTypes.any.isRequired,
-};
 
 export default Home;
