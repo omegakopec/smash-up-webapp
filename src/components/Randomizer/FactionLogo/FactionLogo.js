@@ -1,13 +1,11 @@
-/* eslint import/no-dynamic-require: 0 */ // --> OFF
-
 import React from 'react';
 import propTypes from 'prop-types';
 
 const FactionLogo = ({ faction }) => (
   <div className="logo-container">
     <img
-      src={require(`../../../assets/FactionLogos/${faction.replace(/ /g, '_')}.png`)}
-      alt="faction1"
+      src={process.env.PUBLIC_URL + `FactionLogos/${faction.replace(/ /g, '_')}.png`}
+      alt="faction_img"
       id="factionLogo"
       height="60"
       width="45"
